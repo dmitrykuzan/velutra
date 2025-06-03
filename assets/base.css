@@ -76,6 +76,57 @@
 
 /* base */
 
+/* custom fonts */
+@font-face {
+  font-family: "Fieldwork Hum";
+  src: url("fieldwork-hum-thin.woff2") format("woff2");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Fieldwork Hum";
+  src: url("fieldwork-hum-regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "IvyMode";
+  src: url("IvyMode-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "IvyMode";
+  src: url("IvyMode-BoldItalic.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "IvyMode";
+  src: url("IvyMode-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "IvyMode";
+  src: url("IvyMode-Italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "IvyMode";
+  src: url("IvyMode-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+
 .page-width {
   max-width: var(--page-width);
   margin: 0 auto;
@@ -2562,6 +2613,14 @@ input[type='checkbox'] {
 .header__icon--cart {
   position: relative;
   margin-right: -1.2rem;
+  background-color: #F1E5FF;
+  border-radius: 50%;
+  width: 6rem;
+  height: 6rem;
+
+  .svg-wrapper {
+    max-width: 3.4rem;
+  }
 }
 
 .header__icon--menu[aria-expanded='true']::before {
