@@ -56,6 +56,8 @@
   }
 
   .list-menu__item {
+    font-family: "Fieldwork Hum";
+    font-size: 1.8rem;
     display: flex;
     align-items: center;
     line-height: calc(1 + 0.3 / var(--font-body-scale));
@@ -78,7 +80,7 @@
 
 {%- style -%}
   .header {
-    padding: {{ section.settings.padding_top | times: 0.5 | round: 0 }}px 3rem {{ section.settings.padding_bottom | times: 0.5 | round: 0 }}px 3rem;
+    padding: {{ section.settings.padding_top | times: 0.5 | round: 0 }}px 1.5rem {{ section.settings.padding_bottom | times: 0.5 | round: 0 }}px 1.5rem;
   }
 
   .section-header {
@@ -94,6 +96,9 @@
 
   @media screen and (min-width: 990px) {
     .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
       padding-top: {{ section.settings.padding_top }}px;
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
@@ -248,9 +253,7 @@
         {%- endif -%}
       </div>
 
-      {% if section.settings.enable_search %}
-        {% render 'header-search', input_id: 'Search-In-Modal' %}
-      {% endif %}
+      {% render 'header-search', input_id: 'Search-In-Modal' %}
 
       {%- if shop.customer_accounts_enabled -%}
         <a
@@ -291,21 +294,11 @@
       <a href="{{ routes.cart_url }}" class="header__icon header__icon--cart link focus-inset" id="cart-icon-bubble">
         {% if cart == empty %}
           <span class="svg-wrapper">
-            {% comment %} {{ 'icon-cart-empty.svg' | inline_asset_content }} {% endcomment %}
-            <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M30.9132 10.5273C30.7829 10.339 30.6089 10.185 30.4061 10.0787C30.2033 9.97235 29.9777 9.91676 29.7487 9.91668H10.3871L8.75228 5.99252C8.53856 5.4753 8.17573 5.0334 7.71001 4.72309C7.24429 4.41277 6.69675 4.24809 6.13712 4.25002H2.83203V7.08335H6.13712L12.8578 23.2121C12.9654 23.4702 13.147 23.6906 13.3797 23.8456C13.6124 24.0007 13.8858 24.0834 14.1654 24.0834H25.4987C26.0894 24.0834 26.6179 23.7164 26.8261 23.1653L31.0761 11.832C31.1564 11.6176 31.1836 11.3868 31.1552 11.1596C31.1268 10.9324 31.0438 10.7154 30.9132 10.5273ZM24.5169 21.25H15.1103L11.5686 12.75H27.7044L24.5169 21.25Z" fill="black"/>
-              <path d="M14.875 29.75C16.0486 29.75 17 28.7986 17 27.625C17 26.4514 16.0486 25.5 14.875 25.5C13.7014 25.5 12.75 26.4514 12.75 27.625C12.75 28.7986 13.7014 29.75 14.875 29.75Z" fill="black"/>
-              <path d="M24.793 29.75C25.9666 29.75 26.918 28.7986 26.918 27.625C26.918 26.4514 25.9666 25.5 24.793 25.5C23.6194 25.5 22.668 26.4514 22.668 27.625C22.668 28.7986 23.6194 29.75 24.793 29.75Z" fill="black"/>
-            </svg>
+            {{ 'icon-cart-empty.svg' | inline_asset_content }}
           </span>
         {% else %}
           <span class="svg-wrapper">
-            {% comment %} {{ 'icon-cart.svg' | inline_asset_content }} {% endcomment %}
-            <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M30.9132 10.5273C30.7829 10.339 30.6089 10.185 30.4061 10.0787C30.2033 9.97235 29.9777 9.91676 29.7487 9.91668H10.3871L8.75228 5.99252C8.53856 5.4753 8.17573 5.0334 7.71001 4.72309C7.24429 4.41277 6.69675 4.24809 6.13712 4.25002H2.83203V7.08335H6.13712L12.8578 23.2121C12.9654 23.4702 13.147 23.6906 13.3797 23.8456C13.6124 24.0007 13.8858 24.0834 14.1654 24.0834H25.4987C26.0894 24.0834 26.6179 23.7164 26.8261 23.1653L31.0761 11.832C31.1564 11.6176 31.1836 11.3868 31.1552 11.1596C31.1268 10.9324 31.0438 10.7154 30.9132 10.5273ZM24.5169 21.25H15.1103L11.5686 12.75H27.7044L24.5169 21.25Z" fill="black"/>
-              <path d="M14.875 29.75C16.0486 29.75 17 28.7986 17 27.625C17 26.4514 16.0486 25.5 14.875 25.5C13.7014 25.5 12.75 26.4514 12.75 27.625C12.75 28.7986 13.7014 29.75 14.875 29.75Z" fill="black"/>
-              <path d="M24.793 29.75C25.9666 29.75 26.918 28.7986 26.918 27.625C26.918 26.4514 25.9666 25.5 24.793 25.5C23.6194 25.5 22.668 26.4514 22.668 27.625C22.668 28.7986 23.6194 29.75 24.793 29.75Z" fill="black"/>
-            </svg>
+            {{ 'icon-cart.svg' | inline_asset_content }}
           </span>
         {% endif %}
         <span class="visually-hidden">{{ 'templates.cart.cart' | t }}</span>
@@ -319,6 +312,13 @@
         {%- endif -%}
       </a>
     </div>
+
+    {% comment %} print link product {% endcomment %}
+    {% assign product = all_products.velutra %}
+    {% if product %}
+      <a class="header__link-cta btn btn-dark" href="{{ product.url }}">Buy Now</a>
+    {% endif %}
+    {% comment %} print link product {% endcomment %}
   </header>
 </{{ header_tag }}>
 
@@ -489,12 +489,6 @@
   "class": "section-header",
   "max_blocks": 3,
   "settings": [
-    {
-      "type": "checkbox",
-      "id": "enable_search",
-      "label": "Enable search",
-      "default": true
-    },
     {
       "type": "select",
       "id": "logo_position",
