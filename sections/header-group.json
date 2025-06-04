@@ -14,7 +14,7 @@
     "header": {
       "type": "header",
       "settings": {
-        "enable_search": true,
+        "enable_search": false,
         "logo_position": "middle-center",
         "mobile_logo_position": "left",
         "menu": "main-menu",
