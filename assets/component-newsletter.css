@@ -79,6 +79,7 @@
   border: initial;
   border-radius: 10rem;
   z-index: 2;
+  transition: background-color 0.3s linear;
 }
 
 @media screen and (min-width: 1023px) {
@@ -89,15 +90,20 @@
   }
 }
 
+.newsletter-form__button:hover {
+  background-color: #b9b3d1;
+  cursor: pointer;
+}
+
 
 .newsletter-form__button:focus-visible {
-  box-shadow: 0 0 0 0.3rem rgb(var(--color-background)), 0 0 0 0.4rem rgba(var(--color-foreground));
-  background-color: rgb(var(--color-background));
+  /* box-shadow: 0 0 0 0.3rem rgb(var(--color-background)), 0 0 0 0.4rem rgba(var(--color-foreground)); */
+  background-color: #CEC8E8;
 }
 
 .newsletter-form__button:focus {
-  box-shadow: 0 0 0 0.3rem rgb(var(--color-background)), 0 0 0 0.4rem rgba(var(--color-foreground));
-  background-color: rgb(var(--color-background));
+  /* box-shadow: 0 0 0 0.3rem rgb(var(--color-background)), 0 0 0 0.4rem rgba(var(--color-foreground)); */
+   background-color: #CEC8E8;
 }
 
 .newsletter-form__button:not(:focus-visible):not(.focused) {
@@ -108,3 +114,4 @@
 .newsletter-form__button .icon {
   width: 1.5rem;
 }
+
