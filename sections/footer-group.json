@@ -18,7 +18,7 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/logo-light.svg",
-            "image_width": 100,
+            "image_width": 140,
             "alignment": ""
           }
         },
@@ -45,7 +45,8 @@
       "settings": {
         "color_scheme": "scheme-318cab6d-2161-4773-bf44-08ceb326053c",
         "newsletter_enable": true,
-        "newsletter_heading": "Subscribe to our emails",
+        "newsletter_heading": "Join us!",
+        "newsletter_subheading": "Subscribe to receive ONLY important emails, we won’t spam you.",
         "enable_follow_on_shop": true,
         "show_social": true,
         "enable_country_selector": true,
