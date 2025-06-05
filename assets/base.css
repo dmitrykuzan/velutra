@@ -146,6 +146,12 @@
   color: #fff;
 }
 
+.btn-light {
+  background-color: #fff;
+  border: 0.5rem solid #4E4D67;
+  color: #000;
+}
+
 
 .header__link-cta {
   display: none;
@@ -157,8 +163,18 @@
   }
 }
 
-
 /* header custom style */
+
+/* velutra ui */
+
+.velutra-rating-stars {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.velutra-rating-star {
+  display: flex;
+}
 
 .page-width {
   max-width: var(--page-width);

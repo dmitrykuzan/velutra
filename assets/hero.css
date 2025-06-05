@@ -1,0 +1,238 @@
+.hero {
+  position: relative;
+  overflow: hidden;
+  
+  padding-top: 5rem; 
+  padding-bottom: 2rem;
+}
+
+@media screen and (min-width: 1023px) {
+  .hero {
+    height: calc(100vh - 9.5rem);
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+  }
+}
+
+@media screen and (min-width: 1519px) {
+  .hero {
+    padding-top: 8rem;
+    padding-bottom: 6rem;
+  }
+}
+
+.hero__image-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  object-position: center;
+  z-index: -1;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+.hero__image-bg::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgb(0, 0, 0, 0.15);
+}
+
+.hero__wrapper {
+  height: 100%;
+}
+
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  gap: 6rem;
+}
+
+
+.hero__text {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+@media screen and (min-width: 575px) {
+  .hero__text {
+    max-width: 56rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero__content {
+    gap: 10rem;
+  }
+}
+
+@media screen and (min-width: 1023px) {
+ .hero__content {
+    gap: 3rem;
+    max-width: 75rem;
+  }
+}
+
+
+@media screen and (min-width: 1380px) {
+ .hero__content {
+    max-width: 90rem;
+  }
+}
+
+
+@media screen and (min-width: 1023px) {
+ .hero__text {
+    max-width: initial;
+  }
+}
+
+.hero__title {
+  text-align: center;
+  color: #fff;
+  font-family: "Fieldwork Hum";
+  font-size: 3.2rem;
+  line-height: 133%;
+  margin: initial;
+
+  span {
+    font-family: 'IvyMode', sans-serif;
+  }
+}
+
+@media screen and (min-width: 1023px) {
+ .hero__title {
+   text-align: start;
+   font-size: 4.6rem;
+  }
+}
+
+@media screen and (min-width: 1380px) {
+ .hero__title {
+   font-size: 5.6rem;
+  }
+}
+
+
+.hero__description {
+  border: 0.1rem solid rgba(255, 255, 255, 0.4);
+  border-radius: 3rem;
+  padding: 1rem;
+  backdrop-filter: blur(40px);
+  background: rgba(255, 255, 255, 0.2);
+
+  p {
+    text-align: center;
+    color: #fff;
+    font-family: 'Fieldwork Hum';
+    margin: initial;
+    font-weight: 100;
+  }
+}
+
+@media screen and (min-width: 1023px) {
+ .hero__description {
+  max-width: 61rem;
+
+    p {
+      text-align: start;
+      font-size: 1.8rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1380px) {
+ .hero__description {
+    max-width: 67rem;
+
+    p {
+      font-size: 2rem;
+    }
+  }
+}
+
+.hero__bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+
+.hero__review {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+
+  p {
+    margin: initial;
+    color: #fff;
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (min-width: 1023px) {
+  .hero__review {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 2rem;
+  }
+}
+
+@media screen and (min-width: 420px) {
+  .hero__product-link {
+    max-width: 32rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1023px) {
+  .hero__product-link {
+    margin-left: initial;
+    margin-right: auto;
+  }
+}
+
+
+.hero__money-back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+
+  .icon {
+    display: flex;
+  }
+
+  p {
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: initial;
+  }
+}
+
+@media screen and (min-width: 1023px) {
+  .hero__money-back {
+    justify-content: flex-start;
+
+    p {
+      font-size: 2rem;
+    }
+  }
+}
