@@ -5,6 +5,7 @@
   align-items: center;
   width: 100%;
   position: relative;
+  padding-top: 1rem;
 }
 
 @media screen and (min-width: 750px) {
@@ -17,6 +18,33 @@
 
 .newsletter-form__field-wrapper {
   width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  .field__input:focus {
+    box-shadow: initial;
+    border-radius: 10rem;
+    outline: none;
+  }
+
+  /* .field__input:focus ~ .field__label {
+    font-size: initial;
+  } */
+
+  .field {
+    display: flex;
+    align-items: center;
+    
+    .field__label {
+      top: initial;
+      color: rgba(0, 0, 0, 0.5);
+    }
+  }
+
+  .field::before, ::after {
+    display: none;
+  }
 }
 
 .newsletter-form__field-wrapper .field__input {
@@ -43,11 +71,13 @@
 }
 
 .newsletter-form__button {
-  width: 4.4rem;
-  margin: 0;
-  right: var(--inputs-border-width);
-  top: 0;
-  height: 100%;
+  background-color: #fff;
+  height: 3.6rem;
+  width: 12rem;
+  font-family: 'IvyMode', sans-serif;
+  font-size: 1.4rem;
+  border: initial;
+  border-radius: 10rem;
   z-index: 2;
 }
 
@@ -63,7 +93,7 @@
 
 .newsletter-form__button:not(:focus-visible):not(.focused) {
   box-shadow: inherit;
-  background-color: inherit;
+  /* background-color: inherit; */
 }
 
 .newsletter-form__button .icon {
