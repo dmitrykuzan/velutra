@@ -1,6 +1,7 @@
 .list-social {
   display: flex;
   flex-wrap: wrap;
+  gap: 1.5rem;
   /* justify-content: flex-end; */
 }
 
@@ -15,10 +16,24 @@
   width: 2.2rem;
 }
 
+@media screen and (min-width: 1023px) {
+  .list-social__item .icon {
+    height: 3.2rem;
+    width: 3.2rem;
+  }
+
+  .list-social__item {
+    .svg-wrapper {
+      width: 3rem;
+      height: 3rem;
+    }
+  }
+}
+
 .list-social__link {
   align-items: center;
   display: flex;
-  padding: 1.1rem;
+  /* padding: 1.1rem; */
   color: rgb(var(--color-foreground));
 }
 
