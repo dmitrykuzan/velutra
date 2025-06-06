@@ -28,13 +28,28 @@
     "about_CKycFg": {
       "type": "about",
       "name": "About Velutra",
-      "settings": {
-        "color_scheme": "scheme-1"
-      }
+      "settings": {}
+    },
+    "banner_velutra_XtiCQg": {
+      "type": "banner-velutra",
+      "blocks": {
+        "product_Efjnne": {
+          "type": "product",
+          "settings": {
+            "product": ""
+          }
+        }
+      },
+      "block_order": [
+        "product_Efjnne"
+      ],
+      "name": "Banner Velutra",
+      "settings": {}
     }
   },
   "order": [
     "hero_maqQrb",
-    "about_CKycFg"
+    "about_CKycFg",
+    "banner_velutra_XtiCQg"
   ]
 }
