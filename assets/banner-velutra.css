@@ -1,0 +1,162 @@
+.banner-velutra {
+  margin-top: 8rem;
+}
+
+@media screen and (min-width: 1023px) {
+  .banner-velutra {
+   margin-top: 12rem;
+  }
+}
+
+@media screen and (min-width: 1380px) {
+  .banner-velutra {
+   margin-top: 18rem;
+  }
+}
+
+.banner-velutra__wrapper {
+  display: flex;
+  flex-direction: column-reverse;
+  border-radius: 2rem;
+  width: 100%;
+  overflow: hidden;
+  max-width: 68rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 1023px) {
+  .banner-velutra__wrapper {
+    flex-direction: row;
+    max-width: 100rem;
+  }
+}
+
+@media screen and (min-width: 1380px) {
+  .banner-velutra__wrapper {
+    max-width: initial;
+  }
+}
+
+.banner-velutra__content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 2rem;
+  flex-shrink: 0;
+}
+
+.banner-velutra__content::before {
+  content: '';
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  width: 110%;
+  height: 2.5rem;
+  filter: blur(6px);
+  transform: translateX(-50%);
+  z-index: -1;
+  background: linear-gradient(90.00deg, rgb(3, 5, 14), rgb(5, 10, 36) 100% 100%);
+}
+
+@media screen and (min-width: 1023px) {
+  .banner-velutra__content {
+    max-width: 32rem;
+    width: 100%;
+    justify-content: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .banner-velutra__content::before {
+    top: 50%;
+    right: -1.3rem;
+    left: initial;
+    width: 2.5rem;
+    height: 110%;
+    transform: translateY(-50%);
+  }
+}
+
+@media screen and (min-width: 1380px) {
+  .banner-velutra__content {
+    max-width: 45rem;
+  }
+}
+
+.banner-velutra__title {
+  text-align: center;
+  font-size: 3.2rem;
+  font-family: "Fieldwork Hum";
+  color: #fff;
+  margin: initial;
+  z-index: 1;
+
+  span {
+    font-family: 'IvyMode', sans-serif;
+  }
+}
+
+@media screen and (min-width: 1023px) {
+  .banner-velutra__title {
+    font-size: 4.2rem;
+  }
+}
+
+@media screen and (min-width: 1383px) {
+  .banner-velutra__title {
+    font-size: 4.6rem;
+  }
+}
+
+
+.banner-velutra__description {
+  font-size: 1.6rem;
+  text-align: center;
+  color: #fff;
+  margin: initial;
+  max-width: 67rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 1380px) {
+  .banner-velutra__description {
+    font-size: 1.8rem;
+  }
+}
+
+
+.banner-velutra__image {
+  display: flex;
+  max-height: 33rem;
+  z-index: -2;
+
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+}
+
+@media screen and (min-width: 1023px) {
+  .banner-velutra__image {
+    max-height: initial;
+  }
+}
+
+
+.banner-velutra__content {
+  background: linear-gradient(90.00deg, rgb(3, 5, 14),rgb(5, 10, 36) 100%);
+}
+
+.banner-velutra__link {
+  margin-top: 2rem;
+  max-width: 32rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}

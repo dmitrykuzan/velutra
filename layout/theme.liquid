@@ -95,7 +95,7 @@
       {% endfor %}
 
       {{ scheme_classes | prepend: 'body' }} {
-        color: rgba(var(--color-foreground), 0.75);
+        /* color: rgba(var(--color-foreground), 0.75); */
         background-color: rgb(var(--color-background));
       }
 
@@ -294,6 +294,11 @@
       >
     {%- endif -%}
 
+    <link
+      rel="stylesheet"
+      href="{{ 'swiper-bundle.min.css' | asset_url }}"
+    >
+
     <script>
       if (Shopify.designMode) {
         document.documentElement.classList.add('shopify-design-mode');
@@ -375,5 +380,7 @@
     {%- if settings.cart_type == 'drawer' -%}
       <script src="{{ 'cart-drawer.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
+
+    <script src="{{ 'swiper-bundle.min.js' | asset_url }}" defer="defer"></script>
   </body>
 </html>
