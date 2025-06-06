@@ -1,0 +1,223 @@
+
+.about {
+  margin-top: 8rem;
+}
+
+@media screen and (min-width: 1023px) {
+  .about {
+    margin-top: 15rem;
+  }
+}
+
+@media screen and (min-width: 1480px) {
+  .about {
+    margin-top: 20rem;
+  }
+}
+
+.about__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+@media screen and (min-width: 1023px) {
+  .about__wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.about__content {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+@media screen and (min-width: 1023px) {
+  .about__content {
+    max-width: 68rem;
+  }
+}
+
+@media screen and (min-width: 1480px) {
+  .about__content {
+    max-width: 74rem;
+  }
+}
+
+.about__content-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+@media screen and (min-width: 1023px) {
+  .about__content-text {
+    gap: 2rem;
+  }
+}
+
+.about__content-title {
+  font-size: 3.2rem;
+  line-height: 117%;
+  text-align: center;
+  font-family: "Fieldwork Hum";
+  font-weight: 250;
+  margin: initial;
+
+  span {
+    font-family: 'IvyMode', sans-serif;
+    font-weight: 400;
+  }
+}
+
+@media screen and (min-width: 1023px) {
+  .about__content-title {
+    text-align: start;
+    font-size: 4.2rem;
+  }
+}
+
+@media screen and (min-width: 1480px) {
+  .about__content-title {
+    font-size: 5.8rem;
+  }
+}
+
+.about__content-description {
+  text-align: center;
+  font-family: "Fieldwork Hum";
+  font-weight: 250;
+  line-height: 155%;
+  margin: initial;
+
+  span {
+    font-family: 'IvyMode', sans-serif;
+    font-weight: 600;
+  }
+}
+
+@media screen and (min-width: 1023px) {
+  .about__content-description {
+    text-align: start;
+  }
+}
+
+@media screen and (min-width: 1480px) {
+  .about__content-description {
+    font-size: 1.8rem;
+    line-height: 166%;
+  }
+}
+
+.about__content-list-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.about__content-list-title {
+  font-size: 2.4rem;
+  line-height: 133%;
+  font-family: 'IvyMode', sans-serif;
+  font-style: italic;
+  margin: initial;
+  text-align: center;
+}
+
+@media screen and (min-width: 1023px) {
+  .about__content-list-title {
+    text-align: start;
+    font-size: 3.2rem;
+  }
+}
+
+.about__content-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  list-style: none;
+  padding: initial;
+  margin: initial;
+}
+
+.about__content-item {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+
+  .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background-color: #E9E1FF;
+
+    img {
+      max-width: 3rem;
+      object-fit: contain;
+    }
+  }
+
+  p {
+    font-family: "Fieldwork Hum";
+    font-size: 1.8rem;
+    font-weight: 250;
+    line-height: 133%;
+    margin: initial;
+  }
+}
+
+.about__image-desktop {
+  display: none;
+
+   img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .about__image-desktop {
+    display: flex;
+    max-width: 60rem;
+  }
+}
+
+@media screen and (min-width: 1480px) {
+  .about__image-desktop {
+    max-width: 70rem;
+  }
+}
+
+
+.about__image-mobile {
+  max-width: 33.4rem;
+  margin-left: auto;
+  margin-right: auto;
+  flex-shrink: 0;
+
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+}
+
+@media screen and (min-width: 1023px) {
+  .about__image-mobile {
+    margin-right: initial;
+    max-width: 36rem;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .about__image-mobile {
+    display: none;
+  }
+}

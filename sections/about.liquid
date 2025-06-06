@@ -1,0 +1,61 @@
+{{ 'about.css' | asset_url | stylesheet_tag }}
+
+<section class="about page-width">
+  <div class="about__wrapper">
+    <div class="about__content">
+      <div class="about__content-text">
+        <h2 class="about__content-title">The <span>Gut-Skin</span> Connection</h2>
+        <p class="about__content-description">
+          Science calls it the <span>gut-skin axis</span> . A powerful connection between your digestive system and your
+          skin. When your gut is inflamed or imbalanced, toxins leak into your bloodstream, triggering inflammation
+          throughout the body… including your face.
+        </p>
+      </div>
+
+      <div class="about__content-list-wrapper">
+        <h3 class="about__content-list-title">The result?</h3>
+        <ul class="about__content-list">
+          <li class="about__content-item">
+            <span class="icon">
+              <img src="{{ 'item-1.png' | asset_url }}" width="40" height="33" loading="lazy">
+            </span>
+            <p>Persistent acne, inflammation/bloating</p>
+          </li>
+
+          <li class="about__content-item">
+            <span class="icon">
+              <img src="{{ 'item-2.png' | asset_url }}" width="33" height="33" loading="lazy">
+            </span>
+            <p>Irritated, red, or dry skin</p>
+          </li>
+
+          <li class="about__content-item">
+            <span class="icon">
+              <img src="{{ 'item-3.png' | asset_url }}" width="33" height="33" loading="lazy">
+            </span>
+            <p>“Nothing Works” no matter how many products you try</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="about__image-desktop">
+      <img src="{{ 'about-image.png' | asset_url }}" width="850" height="600" loading="lazy">
+    </div>
+
+    <div class="about__image-mobile">
+      <img src="{{ 'about-image-mobile.png' | asset_url }}" width="334" height="334" loading="lazy">
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "About Velutra",
+  "settings": [],
+  "presets": [
+    {
+      "name": "About Velutra"
+    }
+  ]
+}
+{% endschema %}
