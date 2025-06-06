@@ -1,12 +1,12 @@
 {{ 'about.css' | asset_url | stylesheet_tag }}
 
-<section class="about page-width">
+<section class="about page-width color-{{ section.settings.color_scheme }} gradient">
   <div class="about__wrapper">
     <div class="about__content">
       <div class="about__content-text">
         <h2 class="about__content-title">The <span>Gut-Skin</span> Connection</h2>
         <p class="about__content-description">
-          Science calls it the <span>gut-skin axis</span> . A powerful connection between your digestive system and your
+          Science calls it the <span>gut-skin axis</span>. A powerful connection between your digestive system and your
           skin. When your gut is inflamed or imbalanced, toxins leak into your bloodstream, triggering inflammation
           throughout the body… including your face.
         </p>
@@ -51,7 +51,14 @@
 {% schema %}
 {
   "name": "About Velutra",
-  "settings": [],
+  "settings": [
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Color scheme",
+      "default": "scheme-1"
+    }
+  ],
   "presets": [
     {
       "name": "About Velutra"
