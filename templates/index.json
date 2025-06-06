@@ -28,7 +28,9 @@
     "about_CKycFg": {
       "type": "about",
       "name": "About Velutra",
-      "settings": {}
+      "settings": {
+        "color_scheme": "scheme-1"
+      }
     }
   },
   "order": [
