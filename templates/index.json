@@ -45,11 +45,28 @@
       ],
       "name": "Banner Velutra",
       "settings": {}
+    },
+    "benefits_TH4Aae": {
+      "type": "benefits",
+      "blocks": {
+        "product_fDjefW": {
+          "type": "product",
+          "settings": {
+            "product": ""
+          }
+        }
+      },
+      "block_order": [
+        "product_fDjefW"
+      ],
+      "name": "Benefits Velutra",
+      "settings": {}
     }
   },
   "order": [
     "hero_maqQrb",
     "about_CKycFg",
-    "banner_velutra_XtiCQg"
+    "banner_velutra_XtiCQg",
+    "benefits_TH4Aae"
   ]
 }
