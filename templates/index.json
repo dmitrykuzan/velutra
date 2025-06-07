@@ -61,12 +61,29 @@
       ],
       "name": "Benefits Velutra",
       "settings": {}
+    },
+    "velutra_cards_mngBHx": {
+      "type": "velutra-cards",
+      "blocks": {
+        "product_kaaWU4": {
+          "type": "product",
+          "settings": {
+            "product": "velutra"
+          }
+        }
+      },
+      "block_order": [
+        "product_kaaWU4"
+      ],
+      "name": "Sticky content",
+      "settings": {}
     }
   },
   "order": [
     "hero_maqQrb",
     "about_CKycFg",
     "banner_velutra_XtiCQg",
-    "benefits_TH4Aae"
+    "benefits_TH4Aae",
+    "velutra_cards_mngBHx"
   ]
 }
