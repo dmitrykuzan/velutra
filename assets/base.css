@@ -129,6 +129,9 @@
 /* header custom style */
 
 .btn {
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -146,6 +149,44 @@
   color: #fff;
 }
 
+.btn-dark::before {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 300px;
+  margin-left: 60px;
+  opacity: 0.8;
+  left: -40px;
+  z-index: 1;
+  top: -150px;
+  transform: rotate(45deg);
+  animation-name: b;
+  animation-duration: 3s;
+  animation-delay: 0.05s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  background: rgb(255, 255, 255);
+  transition: 0.1s;
+}
+
+@keyframes b {
+  0% {
+    left: -30px;
+    margin-left: 0px;
+  }
+
+  30% {
+    left: 110%;
+    margin-left: 80px;
+  }
+
+  100% {
+    left: 110%;
+    margin-left: 80px;
+  }
+}
+
+
 .btn-light {
   background-color: #fff;
   border: 0.5rem solid #4E4D67;
@@ -160,6 +201,31 @@
 @media screen and (min-width: 990px) {
   .header__link-cta {
     display: flex;
+  }
+}
+
+.velutra-title {
+  font-size: 3.2rem;
+  line-height: 117%;
+  font-family: "Fieldwork Hum";
+  font-weight: 250;
+  margin: initial;
+
+   span {
+    font-family: 'IvyMode', sans-serif;
+    font-weight: 400;
+  }
+}
+
+@media screen and (min-width: 1023px) {
+  .velutra-title {
+    font-size: 4.2rem;
+  }
+}
+
+@media screen and (min-width: 1480px) {
+  .velutra-title {
+    font-size: 5.8rem;
   }
 }
 

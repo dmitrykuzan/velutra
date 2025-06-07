@@ -59,23 +59,12 @@
 }
 
 .about__content-title {
-  font-size: 3.2rem;
-  line-height: 117%;
   text-align: center;
-  font-family: "Fieldwork Hum";
-  font-weight: 250;
-  margin: initial;
-
-  span {
-    font-family: 'IvyMode', sans-serif;
-    font-weight: 400;
-  }
 }
 
 @media screen and (min-width: 1023px) {
   .about__content-title {
     text-align: start;
-    font-size: 4.2rem;
   }
 }
 

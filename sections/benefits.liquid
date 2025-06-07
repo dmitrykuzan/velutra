@@ -1,0 +1,206 @@
+{{ 'benefits.css' | asset_url | stylesheet_tag }}
+
+<section class="benefits page-width">
+  <div class="benefits__wrapper">
+    <div class="benefits__title-wrapper">
+      <h2 class="benefits__title velutra-title">Gut Health, <span>Elevated</span></h2>
+    </div>
+    <div class="benefits__swiper swiper">
+      <ul class="benefits__list swiper-wrapper">
+        <li class="swiper-slide">
+          <div class="benefits__item">
+            <div class="benefits__item-text">
+              <p><span>20+ Probiotics</span> not commonly found in other products or foods.</p>
+            </div>
+            <div class="benefits__image">
+              <img src="{{ 'benefits-1.png' | asset_url }}" width="350" height="350" loading="eager">
+            </div>
+          </div>
+        </li>
+
+        <li class="swiper-slide">
+          <div class="benefits__item">
+            <div class="benefits__item-text">
+              <p>Feed your microbiome with gentle <span>Prebiotic Botanicals.</span></p>
+            </div>
+            <div class="benefits__image">
+              <img src="{{ 'benefits-2.png' | asset_url }}" width="350" height="350" loading="eager">
+            </div>
+          </div>
+        </li>
+
+        <li class="swiper-slide">
+          <div class="benefits__item">
+            <div class="benefits__item-text">
+              <p>Fueled by <span>Natural,</span> Clinically Tested <span>Nutrients.</span></p>
+            </div>
+            <div class="benefits__image">
+              <img src="{{ 'benefits-3.png' | asset_url }}" width="350" height="350" loading="eager">
+            </div>
+          </div>
+        </li>
+
+        <li class="swiper-slide">
+          <div class="benefits__item">
+            <div class="benefits__item-text">
+              <p>Reveal visibly clearer with <span>Advanced Enzyme Blends</span></p>
+            </div>
+            <div class="benefits__image">
+              <img src="{{ 'benefits-4.png' | asset_url }}" width="350" height="350" loading="eager">
+            </div>
+          </div>
+        </li>
+
+        <li class="swiper-slide">
+          <div class="benefits__item">
+            <div class="benefits__item-text">
+              <p>Optimized <span>Biofermentation,</span> for product density and quality.</p>
+            </div>
+            <div class="benefits__image">
+              <img src="{{ 'benefits-5.png' | asset_url }}" width="350" height="350" loading="eager">
+            </div>
+          </div>
+        </li>
+
+        <li class="swiper-slide">
+          <div class="benefits__item">
+            <div class="benefits__item-text">
+              <p>
+                No <span>Binders,</span> <br>
+                No <span>Preservatives,</span> <br>
+                No <span>Chemicals.</span>
+              </p>
+            </div>
+            <div class="benefits__image">
+              <img src="{{ 'benefits-6.png' | asset_url }}" width="350" height="350" loading="eager">
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <div class="benefits__swiper-pagination"></div>
+    </div>
+
+    <div class="benefits__link-wrapper" data-da="benefits__title-wrapper,last,1023">
+      {% for block in section.blocks %}
+        {% if block.type == 'product' and block.settings.product %}
+          {% assign product = block.settings.product %}
+          <a class="btn btn-light" href="{{ product.url }}">SHOP NOW</a>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% comment %}
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const swiperBeforeAfter = new Swiper('.benefits__swiper', {
+        spaceBetween: 10,
+        slidesPerView: 1,
+        loop: true,
+
+        pagination: {
+          el: '.benefits__swiper-pagination',
+          clickable: true,
+        },
+
+        autoplay: {
+          delay: 2000,
+        },
+
+        breakpoints: {
+          575: {
+            slidesPerView: 2,
+          },
+
+          992: {
+            slidesPerView: 3,
+          },
+        },
+      });
+    });
+  </script>
+{% endcomment %}
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    let swiperInstance = null;
+
+    function initOrDestroySwiper() {
+      const screenWidth = window.innerWidth;
+
+      // Если ширина меньше или равна 992, и свайпер не инициализирован — инициализируем
+      if (screenWidth <= 1023 && !swiperInstance) {
+        swiperInstance = new Swiper('.benefits__swiper', {
+          spaceBetween: 10,
+          slidesPerView: 1,
+          loop: true,
+
+          pagination: {
+            el: '.benefits__swiper-pagination',
+            clickable: true,
+          },
+
+          autoplay: {
+            delay: 2000,
+          },
+
+          breakpoints: {
+            575: {
+              slidesPerView: 2,
+            },
+            768: {
+              slidesPerView: 2,
+            },
+            992: {
+              slidesPerView: 3,
+            },
+          },
+        });
+
+        // Если ширина больше 992, и свайпер уже есть — уничтожаем его
+      } else if (screenWidth > 1023 && swiperInstance) {
+        swiperInstance.destroy(true, true); // Удаляем инстанс и чистим стили
+        swiperInstance = null;
+      }
+    }
+
+    // Инициализация при загрузке
+    initOrDestroySwiper();
+
+    // Переинициализация при ресайзе
+    window.addEventListener('resize', function () {
+      initOrDestroySwiper();
+    });
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Benefits Velutra",
+  "blocks": [
+    {
+      "type": "product",
+      "name": "Product link",
+      "settings": [
+        {
+          "type": "product",
+          "id": "product",
+          "label": "Select a product"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Benefits Velutra",
+      "blocks": [
+        {
+          "type": "product"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

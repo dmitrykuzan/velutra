@@ -101,20 +101,12 @@
 .hero__title {
   text-align: center;
   color: #fff;
-  font-family: "Fieldwork Hum";
-  font-size: 3.2rem;
   line-height: 133%;
-  margin: initial;
-
-  span {
-    font-family: 'IvyMode', sans-serif;
-  }
 }
 
 @media screen and (min-width: 1023px) {
  .hero__title {
    text-align: start;
-   font-size: 4.6rem;
   }
 }
 

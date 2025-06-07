@@ -89,24 +89,11 @@
 
 .banner-velutra__title {
   text-align: center;
-  font-size: 3.2rem;
-  font-family: "Fieldwork Hum";
   color: #fff;
-  margin: initial;
   z-index: 1;
-
-  span {
-    font-family: 'IvyMode', sans-serif;
-  }
 }
 
-@media screen and (min-width: 1023px) {
-  .banner-velutra__title {
-    font-size: 4.2rem;
-  }
-}
-
-@media screen and (min-width: 1383px) {
+@media screen and (min-width: 1380px) {
   .banner-velutra__title {
     font-size: 4.6rem;
   }
