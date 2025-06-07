@@ -1,0 +1,218 @@
+.velutra-cards {
+  margin-top: 8rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: #F3EDFF;
+}
+
+@media screen and (min-width: 1023px) {
+  .velutra-cards {
+    margin-top: 12rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}
+
+.velutra-cards__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+@media screen and (min-width: 1023px) {
+  .velutra-cards__wrapper {
+    position: relative;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+}
+
+
+.velutra-cards__content {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+@media screen and (min-width: 1023px) {
+  .velutra-cards__content {
+    position: sticky;
+    top: 13rem;
+    height: max-content;
+    max-width: 54rem;
+    gap: 3rem;
+  }
+}
+
+@media screen and (min-width: 1380px) {
+  .velutra-cards__content {
+    gap: 4rem;
+    max-width: 64rem;
+  }
+}
+
+.velutra-cards__title {
+  font-family: 'IvyMode', sans-serif;
+}
+
+@media screen and (min-width: 1480px) {
+  .velutra-cards__title {
+    font-size: 4.8rem;
+  }
+}
+
+.velutra-cards__text-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  list-style: none;
+  padding: initial;
+  margin: initial;
+}
+
+
+
+
+.velutra-cards__text-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+
+  .icon {
+    display: flex;
+    max-width: 2.5rem;
+
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  p {
+    margin: initial;
+    font-size: 1.8rem;
+    line-height: 122%;
+  }
+}
+
+@media screen and (min-width: 1023px) {
+  .velutra-cards__text-item {
+    p {
+      font-size: 2rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1380px) {
+  .velutra-cards__text-item {
+    p {
+      font-size: 2.2rem;
+    }
+  }
+}
+
+
+.velutra-cards__link {
+  max-width: 41rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+@media screen and (min-width: 1023px) {
+  .velutra-cards__link {
+    margin-left: initial;
+  }
+}
+
+
+.velutra-cards__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: initial;
+  margin: initial;
+  max-width: 42rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 767px) {
+  .velutra-cards__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: initial;
+    margin-left: initial;
+    margin-right: initial;
+  }
+}
+
+@media screen and (min-width: 1023px) {
+  .velutra-cards__list {
+    display: flex;
+    max-width: 50rem;
+  }
+}
+
+@media screen and (min-width: 1380px) {
+  .velutra-cards__list {
+    max-width: 65rem;
+    gap: 3rem;
+  }
+}
+
+
+.velutra-cards__item {
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 2rem;
+  background-color: #fff;
+}
+
+.velutra-cards__item-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  h3 {
+    margin: initial;
+    font-size: 1.8rem;
+    line-height: 133%;
+    font-style: italic;
+  }
+
+  p {
+    margin: initial;
+    font-size: 1.6rem;
+    line-height: 133%;
+  }
+}
+
+@media screen and (min-width: 1023px) {
+  .velutra-cards__item-text {
+    h3 {
+      font-size: 2.2rem;
+    }
+
+    p {
+      font-size: 1.8rem;
+    }
+  }
+}
+
+.velutra-cards__item-image {
+  display: flex;
+
+  img {
+    border-radius: 2rem;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+}

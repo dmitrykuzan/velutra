@@ -8,6 +8,17 @@
   }
 }
 
+@media screen and (min-width: 1280px) {
+  .benefits {
+    margin-top: 15rem;
+  }
+}
+
+@media screen and (min-width: 1480px) {
+  .benefits {
+    margin-top: 20rem;
+  }
+}
 
 .benefits__title {
   text-align: center;
@@ -50,6 +61,7 @@
 
 .benefits__swiper {
   width: 100%;
+  padding: 0.3rem;
 }
 
 .benefits__list {
