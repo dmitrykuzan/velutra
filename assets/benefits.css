@@ -89,6 +89,12 @@
   }
 }
 
+@media screen and (min-width: 1480px) {
+   .benefits__item {
+    min-height: 18rem;
+  }
+}
+
 
 .benefits__item-text {
   padding-top: 1rem;
@@ -130,6 +136,17 @@
   }
 }
 
+@media screen and (min-width: 1480px) {
+   .benefits__item-text {
+    padding-right: 16rem;
+
+     p {
+      font-size: 2.8rem;
+    }
+  }
+}
+
+
 .benefits__image {
   position: absolute;
   top: 50%;
@@ -149,6 +166,13 @@
   .benefits__image {
     width: 18rem;
     height: 18rem;
+  }
+}
+
+@media screen and (min-width: 1480px) {
+   .benefits__image {
+    width: 22rem;
+    height: 22rem;
   }
 }
 
