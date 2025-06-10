@@ -77,6 +77,11 @@
       ],
       "name": "Sticky content",
       "settings": {}
+    },
+    "customer_slider_YW3U33": {
+      "type": "customer-slider",
+      "name": "Customer review slider",
+      "settings": {}
     }
   },
   "order": [
@@ -84,6 +89,7 @@
     "about_CKycFg",
     "banner_velutra_XtiCQg",
     "benefits_TH4Aae",
-    "velutra_cards_mngBHx"
+    "velutra_cards_mngBHx",
+    "customer_slider_YW3U33"
   ]
 }
