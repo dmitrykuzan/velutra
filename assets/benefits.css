@@ -90,7 +90,7 @@
   display: flex;
   align-items: center;
   border-radius: 2rem;
-  border: 0.1rem solid #8d8d8d;
+  border: 1px solid rgba(209, 200, 236, 1);
   min-height: 12rem;
   height: 100%;
 }
@@ -209,3 +209,4 @@
     transform: scale(1);
   }
 }
+/*локализировать  */
