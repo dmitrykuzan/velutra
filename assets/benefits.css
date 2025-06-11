@@ -91,19 +91,27 @@
   align-items: center;
   border-radius: 2rem;
   border: 0.1rem solid rgba(209, 200, 236, 1);
-  min-height: 12rem;
+  min-height: 14rem;
   height: 100%;
 }
 
-@media screen and (min-width: 1023px) {
+@media screen and (min-width: 575px) {
   .benefits__item {
-    min-height: 15rem;
+    min-height: 16rem;
+  }
+}
+
+
+@media screen and (min-width: 1200px) {
+  .benefits__item {
+    min-height: 18rem;
+    border-radius: 3rem;
   }
 }
 
 @media screen and (min-width: 1480px) {
    .benefits__item {
-    min-height: 18rem;
+    min-height: 21rem;
   }
 }
 

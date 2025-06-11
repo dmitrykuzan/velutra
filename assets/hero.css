@@ -178,9 +178,15 @@
 @media screen and (min-width: 1023px) {
   .hero__review {
     flex-direction: row;
-    align-items: flex-start;
+    align-items: center;
     justify-content: flex-start;
     gap: 2rem;
+
+    p {
+      font-size: 2rem;
+      color: #353535;
+      font-weight: 600;
+    }
   }
 }
 

@@ -175,6 +175,25 @@
   background-color: #fff;
 }
 
+@media screen and (min-width: 1023px) {
+  .velutra-cards__item {
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+
+@media screen and (min-width: 1480px) {
+  .velutra-cards__item {
+    border-radius: 3rem;
+    padding-top: 2.5rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+}
+
 .velutra-cards__item-text {
   display: flex;
   flex-direction: column;
@@ -202,6 +221,18 @@
 
     p {
       font-size: 1.8rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1480px) {
+  .velutra-cards__item-text {
+    h3 {
+      font-size: 4.2rem;
+    }
+
+    p {
+      font-size: 2.2rem;
     }
   }
 }
