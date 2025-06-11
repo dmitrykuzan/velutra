@@ -82,6 +82,22 @@
       "type": "customer-slider",
       "name": "Customer review slider",
       "settings": {}
+    },
+    "pros_cons_peK8Be": {
+      "type": "pros-cons",
+      "blocks": {
+        "product_MG3MVp": {
+          "type": "product",
+          "settings": {
+            "product": "velutra"
+          }
+        }
+      },
+      "block_order": [
+        "product_MG3MVp"
+      ],
+      "name": "Velutra Pros Cons",
+      "settings": {}
     }
   },
   "order": [
@@ -90,6 +106,7 @@
     "banner_velutra_XtiCQg",
     "benefits_TH4Aae",
     "velutra_cards_mngBHx",
-    "customer_slider_YW3U33"
+    "customer_slider_YW3U33",
+    "pros_cons_peK8Be"
   ]
 }
