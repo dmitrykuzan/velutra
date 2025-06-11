@@ -55,7 +55,7 @@
   }
 
   .swiper-pagination-bullet-active {
-    background-color: #151124;
+    background-color: #c6b5e6;
     transform: scale(1);
   }
 }
@@ -74,7 +74,7 @@
 
   circle {
     fill: none;
-    stroke-width: 10;
+    stroke-width: 6;
   }
 
   .bg {
@@ -84,7 +84,7 @@
   .graph-progress {
     stroke-dasharray: 408.4; 
     stroke-dashoffset: 408.4;
-    /* transition: stroke-dashoffset 0.3s ease-in; */
+    transition: none;
   }
 
   .graph-number {
@@ -140,6 +140,7 @@
   background-color: #F3EDFF;
   border-radius: 2rem;
   border: 0.1rem solid rgba(0, 0, 0, 0.4);
+  cursor: grab;
 }
 
 .customer-slider__review {
@@ -169,7 +170,7 @@
   margin-left: auto;
   margin-right: auto;
   padding: 1.5rem;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .customer-slider__graph-top {
@@ -211,12 +212,22 @@
 .customer-slider__graph-circle.graph-before {
   .graph-progress {
     stroke: #EFCD00; 
+    stroke-linecap: round;
+  }
+
+  .bg {
+    stroke: #F7CD001A;
   }
 }
 
 .customer-slider__graph-circle.graph-after {
   .graph-progress {
     stroke: #24FFC8; 
+    stroke-linecap: round;
+  }
+
+   .bg {
+    stroke: #0CFFCF1A;
   }
 }
 
@@ -298,6 +309,7 @@
     font-weight: 600;
     font-size: 1.6rem;
     margin: initial;
+    line-height: 100%;
   }
 }
 
@@ -370,7 +382,7 @@
   .customer-slider__text {
     p {
       font-size: 1.8rem;
-      line-height: 166%;
+      line-height: 144%;
     }
   }
 
@@ -386,16 +398,13 @@
     max-width: 15rem;
   }
 
-  .customer-slider__graph-item {
-    gap: 2rem;
-  }
-
   .customer-slider__graph-title {
     font-size: 1.8rem;
   }
 
   .customer-slider__bottom {
     margin-top: auto;
+    gap: 3rem;
 
     p {
       font-size: 2rem;
@@ -421,7 +430,7 @@
 
   .customer-slider__nav {
     max-width: 65rem;
-    margin-top: 5rem;
+    margin-top: 3rem;
   }
 }
 
@@ -430,12 +439,12 @@
   .customer-slider {
     margin-top: 18rem;
   }
+  
 
   .customer-slider__title {
     font-size: 6rem;
     max-width: 44rem;
   }
-
 
   .customer-slider__user {
     p {
@@ -467,6 +476,10 @@
       font-size: 2.4rem;
     }
   }
+
+  .customer-slider__nav {
+    margin-top: 5rem;
+  }
 }
 
 @media screen and (min-width: 1600px) {
@@ -474,7 +487,13 @@
     padding-left: calc((100% - 150rem) / 2);
   }
 
- 
+  .customer-slider__graph {
+    gap: 2rem;
+  }
+
+  .customer-slider__graph-item {
+    gap: 1.8rem;
+  }
 }
 
 
