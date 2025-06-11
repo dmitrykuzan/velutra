@@ -1,0 +1,274 @@
+.pros-cons {
+  background-color: #F3EDFF;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  margin-top: 8rem;
+}
+
+.pros-cons__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.pros-cons__content {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.pros-cons__title {
+  font-size: 3.2rem;
+  text-align: center;
+  margin: initial;
+}
+
+.pros-cons__list {
+  list-style: none;
+  padding: initial;
+  margin: initial;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.pros-cons__item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+
+  .icon {
+    display: flex;
+    max-width: 2.5rem;
+    height: 2.5rem;
+    flex-shrink: 0;
+
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  p {
+    margin: initial;
+    line-height: 133%;
+  }
+}
+
+/* table */
+
+.pros-cons__table {
+  width: 100%;
+}
+
+.pros-cons__table-body {
+  border-collapse: separate;
+  border-spacing: 0px;
+  width: 100%;
+
+  thead {
+    th {
+      height: 7rem;
+      max-width: 10rem;
+      font-size: 1.8rem;
+      line-height: 110%;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+
+    th:nth-child(2) {
+      border-top: 0.1rem solid #7A7780;
+      border-left: 0.1rem solid #7A7780;
+      border-right: 0.1rem solid #7A7780;
+      border-radius: 2rem 0 0 0;
+      background-color: #312B49;
+      color: #fff;
+    }
+
+    th:last-child {
+      border-top: 0.1rem solid #7A7780;
+      border-right: 0.1rem solid #7A7780;
+      border-radius: 0 2rem 0 0;
+      font-weight: 400;
+      font-family: "Fieldwork Hum";
+    }  
+  } 
+
+  tbody {
+    font-family: "Fieldwork Hum";
+
+    tr {
+      td {
+        border-top: 0.1rem solid #7A7780;
+        border-left: 0.1rem solid #7A7780;
+        padding: 1rem;
+        line-height: 110%;
+        height: 7rem;
+
+        svg {
+          display: flex;
+          width: 2.3rem;
+          height: 1.8rem;
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+
+      td:nth-child(2) {
+       background-color: #312B49;
+      }
+
+      td:last-child {
+        border-right: 0.1rem solid #7A7780;
+      }
+    }
+
+    tr:first-child {
+      td:first-child {
+        border-radius: 2rem 0 0 0;
+      }
+    }
+
+     tr:last-child {
+      td {
+        border-bottom: 0.1rem solid #7A7780;
+      }
+
+      td:first-child {
+        border-radius: 0 0 0 2rem;
+        border-bottom: 0.1rem solid #7A7780;
+      }
+
+      td:last-child {
+        border-radius: 0 0 2rem 0;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 575px) {
+  .pros-cons__table-body {
+    thead {
+      th {
+        font-size: 2rem;
+      }
+    }
+
+    tbody {
+      tr {
+        td {
+          font-size: 2rem;
+          padding: 1.5rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1023px) {
+  .pros-cons {
+    margin-top: 12rem;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
+  .pros-cons__wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5rem;
+  }
+
+  .pros-cons__content {
+    max-width: 56rem;
+    padding-top: 7rem;
+    flex-shrink: 0;
+  }
+
+  .pros-cons__title {
+    text-align: start;
+    font-size: 4.8rem;
+  }
+
+  .pros-cons__item {
+    gap: 2rem;
+
+    .icon {
+      margin-top: 0.5rem;
+    }
+
+    p {
+      line-height: 166%;
+      font-size: 1.8rem;
+    }
+  }
+
+  .pros-cons__list {
+    gap: 2rem;
+  }
+
+  .pros-cons__link {
+    max-width: 35rem;
+  }
+}
+
+@media screen and (min-width: 1380px) {
+  .pros-cons {
+    margin-top: 16rem;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  } 
+
+ .pros-cons__table-body {
+    thead {
+      th {
+        font-size: 3rem;
+        max-width: initial;
+      }
+
+      th:nth-child(2), th:last-child{ 
+        width: 22rem;
+      }
+    }
+
+    tbody {
+      tr {
+        td {
+         height: 8rem;
+
+         svg {
+          width: 4.5rem;
+          height: 3.5rem;
+         }
+        }
+      }
+    }
+  }
+
+  .pros-cons__item {
+    p {
+      font-size: 2.4rem;
+    }
+
+    .icon {
+      margin-top: 1rem;
+      max-width: 3.5rem;
+      height: 3.5rem;
+    }
+  }
+
+  .pros-cons__wrapper {
+    gap: 6rem;
+  }
+
+  .pros-cons__link {
+    margin-top: 3rem;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .pros-cons__wrapper {
+    gap: 10rem;
+  }
+}
+
