@@ -90,7 +90,7 @@
   display: flex;
   align-items: center;
   border-radius: 2rem;
-  border: 1px solid rgba(209, 200, 236, 1);
+  border: 0.1rem solid rgba(209, 200, 236, 1);
   min-height: 12rem;
   height: 100%;
 }

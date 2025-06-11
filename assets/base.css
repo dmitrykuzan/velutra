@@ -141,12 +141,18 @@
   border-radius: 10rem;
   text-decoration: initial;
   letter-spacing: 2px;
+   transition: background-color 0.3s linear, border 0.3s linear;
 }
 
 .btn-dark {
   background-color: #151124;
   border: 0.5rem solid #999999;
   color: #fff;
+}
+
+.btn-dark:hover {
+  background-color: #383055;
+  border: 0.5rem solid #c0bfbf;
 }
 
 .btn-dark::before {
@@ -193,6 +199,9 @@
   color: #000;
 }
 
+.btn-light:hover {
+  background-color: rgb(223, 217, 243);
+}
 
 .header__link-cta {
   display: none;

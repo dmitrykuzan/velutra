@@ -1,0 +1,163 @@
+.follow-us {
+  background-color: #F3EDFF;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+.follow-us__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.follow-us__top  {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.follow-us__text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.follow-us__title {
+  margin: initial;
+  font-size: 3.2rem;
+  text-align: center;
+}
+
+.follow-us__subtitle {
+  text-align: center;
+  margin: initial;
+  font-family: "Fieldwork Hum";
+  font-weight: 250;
+}
+
+.follow-us__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10rem;
+  min-width: 31rem;
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+  height: 5rem;
+  border: 0.1rem solid #000;
+  text-align: center;
+  color: #000;
+  font-size: 1.8rem;
+  line-height: 133%;
+  text-decoration: initial;
+  transition: background-color 0.3s linear;
+}
+
+.follow-us__link:hover {
+ background-color: rgba(209, 200, 236, 1);
+}
+
+.follow-us__marquee {
+  display: inline-flex;
+  overflow: hidden;
+  width: 100%;
+  align-items: center;
+  gap: 1rem;
+}
+
+.follow-us__marquee-list {
+  list-style: none;
+  margin: initial;
+  padding: initial;
+  display: flex;
+  gap: 1rem;
+  flex-shrink: 0;
+  white-space: nowrap;
+  will-change: transform;
+  animation: marquee-horizontal-left 50000ms linear infinite;
+}
+
+.follow-us__marquee-item {
+  max-width: 31rem;
+
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 2rem;
+  }
+}
+
+@keyframes marquee-horizontal-left {
+  0% {
+    transform: translateZ(0);
+    visibility: visible;
+  }
+  
+  100% {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+
+@media screen and (min-width: 1023px) {
+
+  .follow-us {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
+
+  .follow-us__top {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .follow-us__wrapper {
+    gap: 5rem;
+  }
+
+  .follow-us__title {
+    text-align: start;
+    font-size: 4.2rem;
+  }
+
+  .follow-us__subtitle {
+    text-align: start;
+    font-size: 1.8rem;
+  }
+
+  .follow-us__marquee-item {
+    max-width: 42rem;
+  }
+
+  .follow-us__marquee {
+    gap: 3rem;
+  }
+
+  .follow-us__marquee-list {
+    gap: 3rem;
+  }
+
+  .follow-us__link {
+    margin-right: initial;
+    margin-left: initial;
+  }
+}
+
+@media screen and (min-width: 1380px) {
+  .follow-us__title {
+    font-size: 5.8rem;
+  }
+
+  .follow-us__subtitle {
+    font-size: 2.4rem;
+  }
+
+  .follow-us {
+    padding-top: 15rem;
+    padding-bottom: 15rem;
+  }
+}
