@@ -98,6 +98,11 @@
       ],
       "name": "Velutra Pros Cons",
       "settings": {}
+    },
+    "follow_us_d3HMLf": {
+      "type": "follow-us",
+      "name": "Follow us on Instagram",
+      "settings": {}
     }
   },
   "order": [
@@ -107,6 +112,7 @@
     "benefits_TH4Aae",
     "velutra_cards_mngBHx",
     "customer_slider_YW3U33",
-    "pros_cons_peK8Be"
+    "pros_cons_peK8Be",
+    "follow_us_d3HMLf"
   ]
 }
