@@ -84,6 +84,7 @@
     },
     "related-products": {
       "type": "related-products",
+      "disabled": true,
       "settings": {
         "heading": "You may also like",
         "heading_size": "h2",
@@ -99,10 +100,33 @@
         "padding_top": 36,
         "padding_bottom": 28
       }
+    },
+    "about_hfy444": {
+      "type": "about",
+      "name": "About Velutra",
+      "settings": {}
+    },
+    "benefits_KW67zC": {
+      "type": "benefits",
+      "blocks": {
+        "product_9nY4dn": {
+          "type": "product",
+          "settings": {
+            "product": "velutra"
+          }
+        }
+      },
+      "block_order": [
+        "product_9nY4dn"
+      ],
+      "name": "Benefits Velutra",
+      "settings": {}
     }
   },
   "order": [
     "main",
-    "related-products"
+    "related-products",
+    "about_hfy444",
+    "benefits_KW67zC"
   ]
 }
