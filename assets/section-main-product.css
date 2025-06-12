@@ -6,6 +6,25 @@ product-info {
   background-color: #F3EDFF;
 }
 
+.velutra__money-back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+  gap: 1rem;
+
+  .icon {
+    display: flex;
+  }
+
+  p {
+    margin: initial;
+    color: #615F66;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+}
+
 .product {
   margin: 0;
   display: flex;

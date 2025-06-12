@@ -26,7 +26,7 @@
     }
   }
 {%- endstyle -%}
-<div class="velutra-footer__wrapper">
+<div class="velutra-footer__wrapper {% if template == 'index' %}is-homepage{% endif %}">
   <footer class="footer color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding">
     {%- liquid
       assign has_social_icons = true
