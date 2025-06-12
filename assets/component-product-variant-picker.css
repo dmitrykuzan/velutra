@@ -183,16 +183,16 @@ variant-selects {
   gap: 2rem;
   margin-top: 2rem;
 
-  max-width: 40rem;
+  /* max-width: 40rem; */
   margin-left: auto;
   margin-right: auto;
 }
 
-@media screen and (min-width: 1023px) {
+/* @media screen and (min-width: 1023px) {
   .velutra__variants-wrapper {
     max-width: 50rem;
   }
-}
+} */
 
 @media screen and (min-width: 1280px) {
   .velutra__variants-wrapper {
@@ -200,11 +200,11 @@ variant-selects {
   }
 }
 
-@media screen and (min-width: 1480px) {
+/* @media screen and (min-width: 1480px) {
   .velutra__variants-wrapper {
     max-width: initial;
   }
-}
+} */
 
 .velutra__variants-title {
   font-size: 1.8rem;
