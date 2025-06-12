@@ -20,6 +20,27 @@
       }
     }
   ],
-  "variant": [],
+  "variant": [
+    {
+      "key": "variant_sub_name",
+      "namespace": "custom",
+      "name": "variant-sub-name",
+      "description": "Heading under the product variant card",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "variant_top_name",
+      "namespace": "custom",
+      "name": "variant-top-name",
+      "description": "",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    }
+  ],
   "shop": []
 }
