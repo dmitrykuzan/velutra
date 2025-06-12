@@ -121,12 +121,29 @@
       ],
       "name": "Benefits Velutra",
       "settings": {}
+    },
+    "pros_cons_Jf8Dnw": {
+      "type": "pros-cons",
+      "blocks": {
+        "product_HgkDq3": {
+          "type": "product",
+          "settings": {
+            "product": "velutra"
+          }
+        }
+      },
+      "block_order": [
+        "product_HgkDq3"
+      ],
+      "name": "Velutra Pros Cons",
+      "settings": {}
     }
   },
   "order": [
     "main",
     "related-products",
     "about_hfy444",
-    "benefits_KW67zC"
+    "benefits_KW67zC",
+    "pros_cons_Jf8Dnw"
   ]
 }
