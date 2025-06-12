@@ -140,8 +140,14 @@
   font-size: 2rem;
   border-radius: 10rem;
   text-decoration: initial;
+  cursor: pointer;
   letter-spacing: 2px;
    transition: background-color 0.3s linear, border 0.3s linear;
+
+   span {
+    font-family: 'IvyMode', sans-serif;
+    letter-spacing: initial;
+   }
 }
 
 .btn-dark {

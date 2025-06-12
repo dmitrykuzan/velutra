@@ -24,6 +24,11 @@
   margin-bottom: 0;
   border-top: 0.1rem solid rgba(var(--color-foreground), 0.08);
   border-bottom: 0.1rem solid rgba(var(--color-foreground), 0.08);
+
+  .icon.icon-caret {
+    width: 2rem;
+    height: 1rem;
+  }
 }
 
 .accordion__title {
@@ -32,6 +37,7 @@
   min-height: 1.6rem;
   margin: 0;
   word-break: break-word;
+  font-size: 1.8rem;
 }
 
 .accordion .svg-wrapper {
@@ -51,6 +57,11 @@
   word-break: break-word;
   overflow-x: auto;
   padding: 0 0.6rem;
+
+  p {
+    font-family: "Fieldwork Hum";
+   font-weight: 250;
+  }
 }
 
 .accordion__content img {

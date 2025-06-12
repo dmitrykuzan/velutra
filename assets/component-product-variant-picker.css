@@ -58,14 +58,16 @@ variant-selects {
 
 /* Custom styles for Pill display type */
 .product-form__input--pill input[type='radio'] + label {
-  border: var(--variant-pills-border-width) solid rgba(var(--color-foreground), var(--variant-pills-border-opacity));
+  /* border: var(--variant-pills-border-width) solid rgba(var(--color-foreground), var(--variant-pills-border-opacity)); */
+  border: 0.3rem solid rgb(192, 192, 192);
   background-color: rgb(var(--color-background));
   color: rgba(var(--color-foreground));
-  border-radius: var(--variant-pills-radius);
+  /* border-radius: var(--variant-pills-radius); */
+   border-radius: 2rem;
   color: rgb(var(--color-foreground));
-  display: inline-block;
-  margin: 0.7rem 0.5rem 0.2rem 0;
-  padding: 1rem 2rem;
+  /* display: inline-block; */
+  /* margin: 0.7rem 0.5rem 0.2rem 0; */
+  padding: 2rem 2rem;
   font-size: 1.4rem;
   letter-spacing: 0.1rem;
   line-height: 1;
@@ -73,6 +75,25 @@ variant-selects {
   transition: border var(--duration-short) ease;
   cursor: pointer;
   position: relative;
+
+  min-height: 12rem;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+  justify-content: space-between;
+  font-size: 1.6rem;
+  width: 100%;
+  font-weight: 600;
+
+  .actual-price {
+    font-size: 2rem;
+  }
+
+  .compare-at-price {
+    font-size: 1.6rem;
+  }
 }
 
 .product-form__input--pill input[type='radio'] + label:before {
@@ -89,12 +110,15 @@ variant-selects {
 }
 
 .product-form__input--pill input[type='radio'] + label:hover {
-  border-color: rgb(var(--color-foreground));
+  border-color: rgb(128, 105, 219);
 }
 
 .product-form__input--pill input[type='radio']:checked + label {
-  background-color: rgb(var(--color-foreground));
-  color: rgb(var(--color-background));
+  /* background-color: rgb(var(--color-foreground)); */
+  /* color: rgb(var(--color-background)); */
+  background-color: #DBD1FA;
+  color: #000;
+  border: 3px solid rgb(128, 105, 219);
 }
 
 @media screen and (forced-colors: active) {
@@ -150,3 +174,62 @@ variant-selects {
   }
 }
 /* End custom styles for Swatch display type */
+
+
+.velutra__variants-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+
+  max-width: 40rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 1023px) {
+  .velutra__variants-wrapper {
+    max-width: initial;
+  }
+}
+
+.velutra__variants-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.variant__card-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.variant__card-wrapper:nth-child(2) {
+  .variant__card-label {
+    background-color: #33AD32;
+  }
+}
+
+.variant__card-label {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: -1.5rem;
+  background-color: #252039;
+  min-height: 2.5rem;
+  border-radius: 10rem;
+  color: #fff;
+  line-height: 100%;
+  font-size: 1.2rem;
+  padding-left: 1.5rem;
+  padding-inline-end: 1.5rem;
+  text-align: center;
+}
+
+.variant__subtitle-name {
+  padding-top: 1rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+}

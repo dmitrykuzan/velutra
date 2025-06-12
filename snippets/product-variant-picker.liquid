@@ -29,12 +29,13 @@
       -%}
       {%- if picker_type == 'swatch' -%}
         <fieldset class="js product-form__input product-form__input--swatch">
-          <legend class="form__label">
+          <legend class="form__label ">
             {{ option.name }}:
             <span data-selected-value>
               {{- option.selected_value -}}
             </span>
           </legend>
+
           {% render 'product-variant-options',
             product: product,
             option: option,
@@ -44,13 +45,15 @@
         </fieldset>
       {%- elsif picker_type == 'button' -%}
         <fieldset class="js product-form__input product-form__input--pill">
-          <legend class="form__label">{{ option.name }}</legend>
-          {% render 'product-variant-options',
-            product: product,
-            option: option,
-            block: block,
-            picker_type: picker_type
-          %}
+          <legend class="form__label velutra__variants-title">{{ option.name }}</legend>
+          <div class="velutra__variants-wrapper">
+            {% render 'product-variant-options',
+              product: product,
+              option: option,
+              block: block,
+              picker_type: picker_type
+            %}
+          </div>
         </fieldset>
       {%- else -%}
         <div class="product-form__input product-form__input--dropdown">
