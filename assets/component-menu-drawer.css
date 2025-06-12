@@ -86,6 +86,7 @@ details[open].menu-opening > .menu-drawer__submenu {
 
 .menu-drawer__navigation {
   padding: 3rem 0;
+  background-color: #151124;
 }
 
 .menu-drawer__inner-submenu {
@@ -96,6 +97,12 @@ details[open].menu-opening > .menu-drawer__submenu {
 
 .js .menu-drawer__menu li {
   margin-bottom: 0.2rem;
+
+  a {
+    color: #fff;
+    font-size: 4.4rem;
+    font-family: IvyMode, sans-serif;
+  }
 }
 
 .menu-drawer__menu-item {
@@ -173,6 +180,7 @@ details[open].menu-opening > .menu-drawer__submenu {
   padding: 0;
   background-color: rgba(var(--color-foreground), 0.03);
   position: relative;
+  background-color: #151124;
 }
 
 .header--has-social .menu-drawer__utility-links {
@@ -240,4 +248,11 @@ details[open].menu-opening > .menu-drawer__submenu {
     filter: none !important;
     transition: none !important;
   }
+}
+
+.velutra__burger-navigagtion {
+  background-color: #151124;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-bottom: 2rem;
 }

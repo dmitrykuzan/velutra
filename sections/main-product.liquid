@@ -134,7 +134,7 @@
                         </svg>
                       </span>
                     </div>
-                    <p>Trusted by 60K+ Customers</p>
+                    <p>Based on 3,347 Customers</p>
                   </div>
                 </div>
               {%- when 'price' -%}
@@ -227,6 +227,8 @@
                 {%- if product.description != blank -%}
                   <div class="product__description rte quick-add-hidden" {{ block.shopify_attributes }}>
                     {{ product.description }}
+
+                    {% render 'velutra-product-list' %}
                   </div>
                 {%- endif -%}
               {%- when 'sku' -%}

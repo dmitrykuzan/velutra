@@ -1,0 +1,47 @@
+.velutra-product-list__body {
+  margin-top: 2rem;
+  padding-bottom: 3rem;
+  border-bottom: 0.1rem solid #7A7780;
+  display: none;
+}
+
+@media screen and (min-width: 767px) {
+  .velutra-product-list__body {
+    display: block;
+  }
+}
+
+.velutra-product-list {
+  list-style: none;
+  padding: initial;
+  padding-left: initial !important;
+  margin: initial;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+
+.velutra-product-list__item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  .icon {
+    display: flex;
+    max-width: 3rem;
+    flex-shrink: 0;
+
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  p {
+    margin: initial;
+    line-height: 133%;
+    font-size: 1.6rem;
+    color: #000;
+  }
+}

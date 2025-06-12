@@ -52,6 +52,7 @@ product-info {
 @media screen and (min-width: 1480px) {
   .product {
     gap: 0rem !important;
+    justify-content: space-between;
     .grid__item {
       max-width: 75rem;
     }
@@ -61,7 +62,7 @@ product-info {
 @media screen and (min-width: 1680px) {
   .product {
     .grid__item {
-      max-width: 97rem;
+      max-width: 80rem;
     }
   }
 }
@@ -152,8 +153,8 @@ product-info {
 
 @media screen and (min-width: 1480px) {
   .product--large:not(.product--no-media) .product__info-wrapper {
-    padding: 0 0 0 2rem;
-    max-width: 40%;
+    padding: 0 0 0 0rem;
+    max-width: 42%;
     width: calc(40% - var(--grid-desktop-horizontal-spacing) / 2);
   }
 }
@@ -515,6 +516,12 @@ a.product__text {
 }
 
 @media screen and (min-width: 1023px) {
+  .product-form__buttons {
+    max-width: 50rem;
+  }
+}
+
+@media screen and (min-width: 1480px) {
   .product-form__buttons {
     max-width: initial;
   }
