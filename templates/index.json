@@ -15,19 +15,17 @@
         "product_GMyejt": {
           "type": "product",
           "settings": {
-            "product": ""
+            "product": "velutra"
           }
         }
       },
       "block_order": [
         "product_GMyejt"
       ],
-      "name": "Hero",
       "settings": {}
     },
     "about_CKycFg": {
       "type": "about",
-      "name": "About Velutra",
       "settings": {}
     },
     "banner_velutra_XtiCQg": {
@@ -36,14 +34,13 @@
         "product_Efjnne": {
           "type": "product",
           "settings": {
-            "product": ""
+            "product": "velutra"
           }
         }
       },
       "block_order": [
         "product_Efjnne"
       ],
-      "name": "Banner Velutra",
       "settings": {}
     },
     "benefits_TH4Aae": {
@@ -59,7 +56,6 @@
       "block_order": [
         "product_fDjefW"
       ],
-      "name": "Benefits Velutra",
       "settings": {}
     },
     "velutra_cards_mngBHx": {
@@ -75,12 +71,10 @@
       "block_order": [
         "product_kaaWU4"
       ],
-      "name": "Sticky content",
       "settings": {}
     },
     "customer_slider_YW3U33": {
       "type": "customer-slider",
-      "name": "Customer review slider",
       "settings": {}
     },
     "pros_cons_peK8Be": {
@@ -96,12 +90,10 @@
       "block_order": [
         "product_MG3MVp"
       ],
-      "name": "Velutra Pros Cons",
       "settings": {}
     },
     "follow_us_d3HMLf": {
       "type": "follow-us",
-      "name": "Follow us on Instagram",
       "settings": {}
     }
   },
