@@ -190,6 +190,18 @@ variant-selects {
 
 @media screen and (min-width: 1023px) {
   .velutra__variants-wrapper {
+    max-width: 50rem;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .velutra__variants-wrapper {
+   gap: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1480px) {
+  .velutra__variants-wrapper {
     max-width: initial;
   }
 }
