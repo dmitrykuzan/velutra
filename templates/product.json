@@ -149,6 +149,15 @@
         "collapsible_row_AJCAR7": {
           "type": "collapsible_row",
           "settings": {
+            "heading": "What is Velutra?",
+            "icon": "none",
+            "row_content": "<p>Velutra is a natural liquid based elixir used to fight inflammation and bloating at its source to help keep skin health balanced and youthful. </p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_8DGKWC": {
+          "type": "collapsible_row",
+          "settings": {
             "heading": "Why should I take Velutra?",
             "icon": "none",
             "row_content": "<p>Your body is home to trillions of microorganisms that live in you. They perform critical functions like digesting food, managing inflammation, metabolizing nutrients and synthesizing vitamins. Velutra isn’t like most serums that topically target your skin, Velutra works to heal your gut microbiome. When your stomach is healthy the rest of your body is healthy. </p>",
@@ -158,9 +167,9 @@
         "collapsible_row_pBXxQh": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "How often do I take it?",
+            "heading": "How does Velutra work?",
             "icon": "none",
-            "row_content": "<p>We recommend 2-3 drops per day in the morning or night with water. Daily use is recommended to see consistent results. </p>",
+            "row_content": "<p>Velutra is not a serum/cream based product, it is oral. 1-2 drops per day preferably with water day or night. To see real results users must stay consistent with daily usage. </p>",
             "page": ""
           }
         },
@@ -203,16 +212,16 @@
         "collapsible_row_zYyYrj": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "How often should I use Velutra?",
+            "heading": "Extra",
             "icon": "none",
-            "row_content": "<p>Your body is home to trillions of microorganisms that live in you. They perform critical functions like digesting food, managing inflammation, metabolizing nutrients and synthesizing vitamins. Velutra isn’t like most serums that topically target your skin, Velutra works to heal your gut microbiome. When your stomach is healthy the rest of your body is healthy. </p>",
+            "row_content": "<p>Extra</p>",
             "page": ""
           }
         },
         "collapsible_row_zXEwxP": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "How does Velutra work?",
+            "heading": "Does it really work?",
             "icon": "none",
             "row_content": "<p>Many users report visible improvements in skin health and reduced bloating/inflammation. Like any product, individual results can vary based on skin type, age, and product use consistency.</p>",
             "page": ""
@@ -221,6 +230,7 @@
       },
       "block_order": [
         "collapsible_row_AJCAR7",
+        "collapsible_row_8DGKWC",
         "collapsible_row_pBXxQh",
         "collapsible_row_gjQYb3",
         "collapsible_row_KEtVb7",
