@@ -196,7 +196,7 @@
           "settings": {
             "heading": "Are results permanent?",
             "icon": "none",
-            "row_content": "<p>No, results are not permanent. Continued use is needed to maintain the benefits. If you stop using it, the effects will gradually fade.</p>",
+            "row_content": "<p>No, results are not permanent. Continued use is needed to maintain the benefits. If you stop using it, the effects will gradually decrease.</p>",
             "page": ""
           }
         },
